@@ -1,0 +1,25 @@
+Algoritmo CobroEstacionamiento
+    // Solicitar minutos y horas al cliente
+    Leer minutos
+    Leer horas
+
+    // Calcular el monto total
+    montoTotal = 0
+
+    Si minutos > 10 Entonces
+        montoTotal = (minutos - 10) * 0.30
+    Fin Si
+
+    Si horas > 0 Entonces
+        montoTotal = montoTotal + horas * 0.60
+    Fin Si
+
+    // Aplicar descuento los martes y sábados
+    Si diaDeLaSemana == "martes" o diaDeLaSemana == "sábado" Entonces
+        descuento = montoTotal * 0.15
+        montoTotal = montoTotal - descuento
+    Fin Si
+
+    // Mostrar el monto a pagar
+    Escribir "El monto a pagar es:", montoTotal
+Fin Algoritmo

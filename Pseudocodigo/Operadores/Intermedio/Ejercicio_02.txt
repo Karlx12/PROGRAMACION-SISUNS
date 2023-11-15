@@ -1,0 +1,10 @@
+Algoritmo ConvertirYardasAMillas
+    // Solicitar la cantidad de yardas al usuario
+    Leer yardas
+
+    // Realizar la conversión a millas
+    millas = yardas * 0.000568182
+
+    // Mostrar el resultado
+    Escribir "La cantidad en millas es:", millas
+Fin Algoritmo

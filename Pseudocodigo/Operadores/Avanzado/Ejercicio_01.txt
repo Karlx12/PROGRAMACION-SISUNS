@@ -1,0 +1,19 @@
+Algoritmo CalcularHoraLlegada
+    // Ingresar la hora de partida y el tiempo de viaje en segundos
+    Leer HH, MM, SS
+    Leer tiempoViaje
+
+    // Convertir la hora de partida a segundos
+    tiempoPartida = HH * 3600 + MM * 60 + SS
+
+    // Calcular la hora de llegada en segundos
+    tiempoLlegada = tiempoPartida + tiempoViaje
+
+    // Convertir la hora de llegada a formato HH:MM:SS
+    HH_llegada = tiempoLlegada / 3600
+    MM_llegada = (tiempoLlegada % 3600) / 60
+    SS_llegada = tiempoLlegada % 60
+
+    // Mostrar la hora de llegada
+    Escribir "Hora de llegada:", HH_llegada, ":", MM_llegada, ":", SS_llegada
+Fin Algoritmo

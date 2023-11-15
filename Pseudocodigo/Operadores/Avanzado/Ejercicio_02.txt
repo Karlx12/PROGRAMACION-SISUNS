@@ -1,0 +1,24 @@
+Algoritmo CalcularArboles
+    // Definir la cantidad de metros cuadrados por árbol
+    metrosCuadradosPino = 10
+    metrosCuadradosEucalipto = 15
+    metrosCuadradosPalmera = 18
+
+    // Definir la cantidad de árboles por hectárea
+    arbolesPorHectareaPino = 8
+    arbolesPorHectareaEucalipto = 15
+    arbolesPorHectareaPalmera = 10
+
+    // Definir la cantidad de hectáreas disponibles
+    hectareasDisponibles = 7
+
+    // Calcular el número de árboles a sembrar
+    pinos = hectareasDisponibles * arbolesPorHectareaPino
+    eucaliptos = hectareasDisponibles * arbolesPorHectareaEucalipto
+    palmeras = hectareasDisponibles * arbolesPorHectareaPalmera
+
+    // Mostrar los resultados
+    Escribir "Número de pinos a sembrar:", pinos
+    Escribir "Número de eucaliptos a sembrar:", eucaliptos
+    Escribir "Número de palmeras a sembrar:", palmeras
+Fin Algoritmo

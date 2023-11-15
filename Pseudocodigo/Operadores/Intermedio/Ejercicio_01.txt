@@ -1,0 +1,12 @@
+Algoritmo CalcularPromedio
+    // Solicitar tres notas al usuario
+    Leer nota1
+    Leer nota2
+    Leer nota3
+
+    // Calcular el promedio
+    promedio = (nota1 + nota2 + nota3) / 3
+
+    // Mostrar el resultado
+    Escribir "El promedio de las notas es:", promedio
+Fin Algoritmo

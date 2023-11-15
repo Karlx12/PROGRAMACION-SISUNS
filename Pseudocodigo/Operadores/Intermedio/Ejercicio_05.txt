@@ -1,0 +1,11 @@
+Algoritmo CalcularAreaCilindro
+    // Solicitar el radio y la altura al usuario
+    Leer radio
+    Leer altura
+
+    // Calcular el área del cilindro
+    area = 2 * 3.1416 * radio * (radio + altura)
+
+    // Mostrar el resultado
+    Escribir "El área del cilindro es:", area
+Fin Algoritmo
