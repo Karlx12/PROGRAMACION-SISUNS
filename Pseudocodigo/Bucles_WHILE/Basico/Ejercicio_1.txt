@@ -1,14 +1,14 @@
 Algoritmo numerosPares
 	Definir i Como Entero
-  //1. Establecemes que se inicie en 1
+  	//1. Establecemes que se inicie en 1
 	i = 1
-  //2. Se detendrá en el número 100
+  	//2. Se detendrá en el número 100
 	Mientras i <= 100 Hacer
-    //3. Los números pares son aquellos divisibles entre 2
+    		//3. Los números pares son aquellos divisibles entre 2
 		Si i mod 2 = 0 Entonces
 			Escribir i
 		Fin Si
-    //4. El iterador aumenta
+    		//4. El iterador aumenta
 		i = i + 1
 	Fin Mientras
 FinAlgoritmo
