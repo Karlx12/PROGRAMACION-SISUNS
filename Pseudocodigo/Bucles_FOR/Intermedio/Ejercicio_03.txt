@@ -1,0 +1,18 @@
+Algoritmo CalcularInversionAnual
+    Definir inversion_inicial, tasa_interes_mensual, meses_en_un_ano, dinero_despues_de_ano como Real
+    inversion_inicial <- 1000.00
+    tasa_interes_mensual <- 0.02
+    meses_en_un_ano <- 12
+    dinero_despues_de_ano <- inversion_inicial
+
+    Para mes <- 1 Hasta meses_en_un_ano Con Paso 1
+        // Calcular el interés del mes
+        interes_del_mes <- dinero_despues_de_ano * tasa_interes_mensual
+
+        // Sumar el interés al dinero acumulado
+        dinero_despues_de_ano <- dinero_despues_de_ano + interes_del_mes
+    FinPara
+
+    // Mostrar la cantidad de dinero al cabo de un año
+    Mostrar "La cantidad de dinero después de un año es: $", dinero_despues_de_ano
+FinAlgoritmo

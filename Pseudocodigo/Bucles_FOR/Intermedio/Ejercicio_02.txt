@@ -1,0 +1,23 @@
+Algoritmo OrdenarNumeros
+    Definir numeros como Entero[]
+    numeros <- [35, 67, 25, 90, 100, 31, 14, 90]
+    Definir longitud como Entero
+    longitud <- LongitudDe(numeros)
+
+    Para i <- 0 Hasta longitud - 1 Con Paso 1
+        Para j <- 0 Hasta longitud - i - 1 Con Paso 1
+            Si numeros[j] < numeros[j+1] Entonces
+                // Intercambiar los elementos si el elemento actual es menor que el siguiente
+                Definir temp como Entero
+                temp <- numeros[j]
+                numeros[j] <- numeros[j+1]
+                numeros[j+1] <- temp
+            FinSi
+        FinPara
+    FinPara
+
+    // Mostrar la lista ordenada
+    Para k <- 0 Hasta longitud - 1 Con Paso 1
+        Mostrar numeros[k]
+    FinPara
+FinAlgoritmo

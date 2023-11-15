@@ -1,0 +1,38 @@
+Algoritmo SerieFibonacciYPromedio
+    // Declaración de variables
+    Definir N, termino_actual, primer_termino, segundo_termino, siguiente_termino, suma_terminos como Entero
+    Definir promedio como Real
+
+    // Inicialización de variables
+    primer_termino <- 1
+    segundo_termino <- 1
+    suma_terminos <- 2  // Inicializado con los dos primeros términos de la serie
+    promedio <- 0
+
+    // Lectura del valor de N desde la entrada estándar
+    Escribir "Ingrese el valor de N:"
+    Leer N
+
+    // Verificar si N es menor o igual a 0
+    Si N <= 0 Entonces
+        Mostrar "N debe ser un número entero positivo."
+    Sino
+        // Mostrar los dos primeros términos de la serie
+        Mostrar "Serie de Fibonacci hasta el término ", N, ": ", primer_termino, ", ", segundo_termino
+
+        // Calcular y mostrar el resto de la serie
+        Para termino_actual <- 3 Hasta N Con Paso 1
+            siguiente_termino <- primer_termino + segundo_termino
+            Mostrar ", ", siguiente_termino
+            suma_terminos <- suma_terminos + siguiente_termino
+
+            // Actualizar los términos para el próximo cálculo
+            primer_termino <- segundo_termino
+            segundo_termino <- siguiente_termino
+        FinPara
+
+        // Calcular y mostrar el promedio
+        promedio <- suma_terminos / N
+        Mostrar "Promedio de la serie: ", promedio
+    FinSi
+FinAlgoritmo
