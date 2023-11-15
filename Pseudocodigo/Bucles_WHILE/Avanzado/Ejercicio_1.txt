@@ -1,0 +1,24 @@
+Algoritmo dividirRestando
+	Definir dividendo, divisor, cociente, residuo Como Entero
+  //1. Entrada de datos
+  Escribir "Ingrese el dividendo: "
+  Leer dividendo
+  //2. La divison entre cero da un número indeterminado
+  Escribir "Ingrese el divisor (debe ser mayor que 0): "
+  Leer divisor
+	Si divisor <= 0 Entonces
+		Escribir  "El divisor no puede ser 0"
+	SiNo
+		// Inicializar el cociente y el residuo
+		cociente = 0
+		residuo = dividendo
+		// Simular la división usando restas
+		Mientras residuo >= divisor Hacer
+			residuo = residuo - divisor
+			cociente = cociente + 1
+		Fin Mientras
+		// Mostrar resultados
+		Escribir "Cociente: ", cociente
+		Escribir "Residuo: ", residuo
+	Fin Si
+FinAlgoritmo
