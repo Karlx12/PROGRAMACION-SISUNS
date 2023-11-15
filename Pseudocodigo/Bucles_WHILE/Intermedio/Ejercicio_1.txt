@@ -1,5 +1,5 @@
 Algoritmo factorialNumero
-	  Definir N, factorial, i Como Entero
+    Definir N, factorial, i Como Entero
     Escribir "Ingrese un número entero no negativo (N): "
     Leer N
     //1. Inicializar el factorial a 1, para no multiplicar por cero
