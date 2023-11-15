@@ -1,0 +1,21 @@
+Algoritmo CalcularIMC
+    // Solicitar al usuario ingresar su peso y altura
+    Escribir "Ingrese su peso (kg): "
+    Leer peso
+    Escribir "Ingrese su altura (m): "
+    Leer altura
+
+    // Calcular el Índice de Masa Corporal (IMC)
+    imc = peso / (altura * altura)
+
+    // Determinar la categoría del IMC
+    Si imc < 18.5 Entonces
+        Escribir "Bajo de peso"
+    Sino Si imc >= 18.5 y imc < 25 Entonces
+        Escribir "Peso normal"
+    Sino Si imc >= 25 y imc < 30 Entonces
+        Escribir "Sobrepeso"
+    Sino
+        Escribir "Obesidad"
+    Fin Si
+FinAlgoritmo
