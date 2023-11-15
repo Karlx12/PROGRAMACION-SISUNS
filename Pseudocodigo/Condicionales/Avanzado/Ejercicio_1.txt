@@ -1,0 +1,22 @@
+Algoritmo tipoNumero
+	//1. Al ser numeros los definimos como enteros
+	Definir dato Como Entero
+	Leer dato
+  //2. Dato neutro: No es positivo ni negativo, cumpliendo el requisito solo el cero
+	Si dato = 0 Entonces
+		Escribir "Es neutro"
+	SiNo
+    //2. Dato positivo: Todos aquellos por encima de cero son positivos y por debajo negativos
+		Si dato > 0 Entonces
+			Escribir "Es positivo"
+		SiNo
+			Escribir "Es negativo"
+		Fin Si
+	Fin Si
+  //3. Si existe division exacta (residuo de cero) entre 3 y 5 entonces es múltiplo de estos
+	Si dato mod 3 = 0  o dato mod 5 = 0 Entonces
+		Escribir "El número es múltiplo de 3 o 5."
+	SiNo
+		Escribir "El número no es múltiplo de 3 o 5."
+	Fin Si
+FinAlgoritmo
