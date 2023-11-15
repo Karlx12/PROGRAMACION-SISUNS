@@ -1,0 +1,16 @@
+Algoritmo SalarioPorHorasExtras
+    // Solicitar al usuario ingresar las horas trabajadas
+    Escribir "Ingrese las horas trabajadas: "
+    Leer horasTrabajadas
+
+    // Calcular el salario según las horas extras
+    Si horasTrabajadas > 40 Entonces
+        horasNormales = 40
+        horasExtras = horasTrabajadas - 40
+        salario = (horasNormales * salarioNormal) + (horasExtras * salarioNormal * 2)
+    Sino
+        salario = horasTrabajadas * salarioNormal
+    Fin Si
+
+    Escribir "El salario es: ", salario
+FinAlgoritmo

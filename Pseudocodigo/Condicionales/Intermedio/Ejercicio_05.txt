@@ -1,0 +1,28 @@
+Algoritmo SubsidioFamiliar
+    // Solicitar al usuario ingresar la cantidad de hijos y la situación de la madre
+    Escribir "Ingrese la cantidad de hijos: "
+    Leer cantidadHijos
+    Escribir "¿La madre es viuda? (Sí/No): "
+    Leer madreViuda
+
+    // Calcular el monto del subsidio familiar
+    Si cantidadHijos <= 2 Entonces
+        monto = 70
+    Sino Si cantidadHijos >= 3 y cantidadHijos <= 5 Entonces
+        monto = 90
+    Sino
+        monto = 120
+    Fin Si
+
+    // Por cada hijo en edad escolar reciben S/.10.00 adicionales
+    Escribir "Ingrese la cantidad de hijos en edad escolar: "
+    Leer hijosEdadEscolar
+    monto += hijosEdadEscolar * 10
+
+    // Si la madre es viuda, la familia recibe S/.20.00 adicionales
+    Si madreViuda = "Sí" Entonces
+        monto += 20
+    Fin Si
+
+    Escribir "El monto mensual es: ", monto
+FinAlgoritmo
