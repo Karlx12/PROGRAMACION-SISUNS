@@ -1,0 +1,15 @@
+Algoritmo ImprimirConGuionBajo
+    // Iterar a través de los números del 1 al 100
+    Para numero <- 1 Hasta 100 Con Paso 1 Hacer
+        // Imprimir el número actual
+        Escribir numero
+
+        // Verificar si el número es divisible por 3 para agregar un guion bajo
+        Si numero mod 3 = 0 Entonces
+            Escribir "_"
+        Fin Si
+
+        // Imprimir un espacio para separar los números
+        Escribir " "
+    Fin Para
+FinAlgoritmo

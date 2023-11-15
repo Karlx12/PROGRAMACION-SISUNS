@@ -1,0 +1,21 @@
+Algoritmo ImprimirCuadradoAsteriscos
+    // Leer el tamaño del cuadrado (n)
+    Leer n
+
+    // Verificar si n es mayor que 0
+    Si n > 0 Entonces
+        // Iterar a través de las filas del cuadrado
+        Para fila <- 1 Hasta n Con Paso 1 Hacer
+            // Iterar a través de las columnas del cuadrado
+            Para columna <- 1 Hasta n Con Paso 1 Hacer
+                // Imprimir un asterisco
+                Escribir "* "
+            Fin Para
+
+            // Salto de línea después de cada fila
+            Escribir ""
+        Fin Para
+    Sino
+        Escribir "El tamaño debe ser mayor que 0"
+    Fin Si
+FinAlgoritmo
