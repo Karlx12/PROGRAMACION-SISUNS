@@ -1,0 +1,3 @@
+Algoritmo MensajeBienvenida
+    Escribir "¡Explorando el fascinante mundo de UNS!"
+Fin Algoritmo
