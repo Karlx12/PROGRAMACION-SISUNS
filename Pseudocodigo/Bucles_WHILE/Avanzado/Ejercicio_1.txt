@@ -1,5 +1,5 @@
 Algoritmo dividirRestando
-	Definir dividendo, divisor, cociente, residuo Como Entero
+  Definir dividendo, divisor, cociente, residuo Como Entero
   //1. Entrada de datos
   Escribir "Ingrese el dividendo: "
   Leer dividendo
