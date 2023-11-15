@@ -1,0 +1,18 @@
+Algoritmo ConvertirTemperaturas
+    // Solicitar la temperatura en grados Celsius
+    Leer temperaturaCelsius
+
+    // Convertir a Kelvin
+    kelvin = temperaturaCelsius + 273.15
+
+    // Convertir a Ranking
+    ranking = temperaturaCelsius * 1.25
+
+    // Convertir a Fahrenheit
+    fahrenheit = (temperaturaCelsius * 9/5) + 32
+
+    // Mostrar los resultados
+    Escribir "Temperatura en Kelvin:", kelvin
+    Escribir "Temperatura en Ranking:", ranking
+    Escribir "Temperatura en Fahrenheit:", fahrenheit
+Fin Algoritmo
