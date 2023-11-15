@@ -1,1 +1,11 @@
-aaaa
+//1. Declaramos una variable donde se almacenará el importe a pagar
+Definir montoPago Como Real
+Leer montoPago
+//2. Le expresamos la condición a cumplir
+Si montoPago > 200 Entonces
+  //3. Si es verdadero el montoPago se reducirá en un 20% por lo que pagará el 80% y eso lo establecemos
+	montoPago = montoPago * 0.8
+Fin Si
+//4. Si no cumple la condición entonces el montoPago no se ve afectado
+
+Escribir "El monto a pagar es: ", montoPago
