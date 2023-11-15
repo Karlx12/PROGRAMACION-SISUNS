@@ -1,4 +1,4 @@
-Algoritmo intermedio_1FOR
+Algoritmo esPalindromo
 	//1. Las expresiones son cadenas debemos definirlas como tal
 	Definir  palabra, palabraReversa Como Cadena
 	Definir i Como Entero
