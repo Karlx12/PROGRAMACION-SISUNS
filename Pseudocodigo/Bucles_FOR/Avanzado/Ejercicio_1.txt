@@ -1,20 +1,20 @@
 Algoritmo secuenciaDeADN
 	Definir secuenciaADN Como Caracter
 	Definir longitudSADN, adenina, citosina, guanina, timina, i Como Entero
-  //1. Guardamos en una variable la secuencia de ADN, en formato String o cadena
+  	//1. Guardamos en una variable la secuencia de ADN, en formato String o cadena
 	secuenciaADN = "ATGCTAAGGTTCACGG"
-  //2. Calculamos la longitud de la cadena (Esto determina las veces que se itera en el para)
+  	//2. Calculamos la longitud de la cadena (Esto determina las veces que se itera en el para)
 	longitudSADN = Longitud(secuenciaADN)
-  //3. Inicializar contadores para cada letra, en ellos se almacena la cantidad,
-  //   empiezan en cero ya que al inicio no se tienen ningun dato de la secuencia
+  	//3. Inicializar contadores para cada letra, en ellos se almacena la cantidad,
+  	//   empiezan en cero ya que al inicio no se tienen ningun dato de la secuencia
 	adenina = 0
-  citosina = 0
-  guanina = 0
-  timina = 0
-  //4. Iterar a través de cada letra de la secuencia de ADN
+	citosina = 0
+	guanina = 0
+	timina = 0
+  	//4. Iterar a través de cada letra de la secuencia de ADN
 	Para i <- 1 Hasta longitudSADN Con Paso 1 Hacer
-    //5. Para tomamos el cada caracter en orden, aquellos en la posicion 1, 2, 3... de acuerdo al tamaño de la cadena
-    //6. Utilizar un según para determinar la letra y aumentar el contador correspondiente
+    		//5. Para tomamos el cada caracter en orden, aquellos en la posicion 1, 2, 3... de acuerdo al tamaño de la cadena
+    		//6. Utilizar un según para determinar la letra y aumentar el contador correspondiente
 		Segun SubCadena(secuenciaADN,i,i) Hacer
 			"A":
 				adenina = adenina + 1
@@ -27,8 +27,8 @@ Algoritmo secuenciaDeADN
 		Fin Segun
 	Fin Para
 	//7. Mostrar los resultados
-    Escribir "Adenina (A): ",adenina
-    Escribir "Citosina (C): ",citosina
-    Escribir "Guanina (G): ",guanina
-    Escribir "Timina (T): ",timina
+	Escribir "Adenina (A): ",adenina
+	Escribir "Citosina (C): ",citosina
+	Escribir "Guanina (G): ",guanina
+	Escribir "Timina (T): ",timina
 FinAlgoritmo
