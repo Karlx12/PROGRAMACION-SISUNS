@@ -1,4 +1,4 @@
-Algoritmo avanzado_1FOR
+Algoritmo secuenciaDeADN
 	Definir secuenciaADN Como Caracter
 	Definir longitudSADN, adenina, citosina, guanina, timina, i Como Entero
   //1. Guardamos en una variable la secuencia de ADN, en formato String o cadena
