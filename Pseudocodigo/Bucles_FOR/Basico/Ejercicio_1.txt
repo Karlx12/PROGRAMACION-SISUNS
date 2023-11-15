@@ -1,0 +1,23 @@
+Algoritmo numerosPrimos
+	  //1. Un contador nos sirve para almacenar una cantidad que puede ir en aumento
+	  Definir dato, i, contador Como Entero
+    Escribir "Ingrese un número: "
+    Leer dato
+    //2. Inicializar el contador de divisores, al principio no hay ninguno
+    contador = 0
+    //3. Verificar si el número es divisible entre él mismo y los anteriores a él
+    //   Ejm: dato = 5 / (5,4,3,2,1)
+    Para i = 1 Hasta dato Con Paso 1 Hacer
+        Si (dato mod i = 0)Entonces
+            // 4. El número es divisible, aumentar el contador
+            contador = contador + 1
+        Fin Si
+    Fin Para
+    //5. Determinar si el número es primo
+    Si contador = 2 Entonces
+        Escribir "El número ", dato, " es primo."
+    Sino
+        //6. Aquellos con más de 2 divisores no son primos
+        Escribir "El número ", dato, " no es primo."
+    Fin Si
+FinAlgoritmo
