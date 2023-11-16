@@ -1,0 +1,29 @@
+Algoritmo ConteoPalabras
+    // Declaración de variables
+    Definir texto Como Cadena
+    Definir contadorPalabras, longitud, i Como Entero
+
+    // Lectura del texto desde la entrada estándar
+    Escribir "Ingrese una cadena de texto:"
+    Leer texto
+
+    // Inicialización de variables
+    contadorPalabras <- 0
+    longitud <- Longitud(texto)
+    i <- 1
+
+    // Contar el número de palabras con un bucle Mientras
+    Mientras i <= longitud Hacer
+        // Si encuentra un espacio, incrementar el contador de palabras
+        Si Subcadena(texto, i, 1) = " " Entonces
+            contadorPalabras <- contadorPalabras + 1
+        FinSi
+        i <- i + 1
+    Fin Mientras
+
+    // Incrementar el contador para la última palabra (no seguida por espacio)
+    contadorPalabras <- contadorPalabras + 1
+
+    // Mostrar el resultado
+    Escribir "El número de palabras en el texto es:", contadorPalabras
+FinAlgoritmo

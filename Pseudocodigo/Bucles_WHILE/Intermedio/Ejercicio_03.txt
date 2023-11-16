@@ -1,0 +1,36 @@
+Algoritmo PrefijoComun
+    // Declaración de variables
+    Definir palabra1, palabra2, prefijo, longitud1, longitud2, i Como Cadena
+    Definir mensaje Como Cadena
+
+    // Lectura de las palabras desde la entrada estándar
+    Escribir "Ingrese la primera palabra:"
+    Leer palabra1
+    Escribir "Ingrese la segunda palabra:"
+    Leer palabra2
+
+    // Inicialización de variables
+    longitud1 <- Longitud(palabra1)
+    longitud2 <- Longitud(palabra2)
+    prefijo <- ""
+    i <- 1
+
+    // Encontrar el prefijo común con un bucle Mientras
+    Mientras i <= Min(longitud1, longitud2) Hacer
+        Si Subcadena(palabra1, 1, i) = Subcadena(palabra2, 1, i) Entonces
+            prefijo <- Subcadena(palabra1, 1, i)
+        Sino
+            Salir // Si no hay prefijo común, salir del bucle
+        FinSi
+        i <- i + 1
+    Fin Mientras
+
+    // Mostrar el resultado
+    Si Longitud(prefijo) > 0 Entonces
+        mensaje <- "El prefijo común es: " + prefijo
+    Sino
+        mensaje <- "No existe un prefijo común."
+    FinSi
+
+    Escribir mensaje
+FinAlgoritmo

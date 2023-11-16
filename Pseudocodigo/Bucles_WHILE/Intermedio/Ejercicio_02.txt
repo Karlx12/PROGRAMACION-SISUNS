@@ -1,0 +1,26 @@
+Algoritmo SeriePersonalizada
+    // Declaración de variables
+    Definir N, termino, incremento, i Como Entero
+
+    // Lectura del número N desde la entrada estándar
+    Escribir "Ingrese un número entero N:"
+    Leer N
+
+    // Validar que N sea positivo
+    Si N <= 0 Entonces
+        Escribir "El número debe ser un entero positivo. Fin del programa."
+    Sino
+        // Inicialización de variables
+        termino <- 7
+        incremento <- 2
+        i <- 1
+
+        // Mostrar los primeros N términos de la serie
+        Mientras i <= N Hacer
+            Escribir termino
+            termino <- termino + incremento
+            incremento <- incremento + 1
+            i <- i + 1
+        Fin Mientras
+    Fin Si
+FinAlgoritmo
