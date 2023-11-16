@@ -1,0 +1,27 @@
+Algoritmo MultiplicacionRusa
+    // Declaración de variables
+    Definir multiplicando, multiplicador, resultado Como Entero
+
+    // Lectura de los números a multiplicar desde la entrada estándar
+    Escribir "Ingrese el multiplicando:"
+    Leer multiplicando
+    Escribir "Ingrese el multiplicador:"
+    Leer multiplicador
+
+    // Inicialización de variables
+    resultado <- 0
+
+    // Aplicar el algoritmo de la multiplicación rusa
+    Mientras multiplicando > 0 Hacer
+        // Si el multiplicando es impar, sumar al resultado el multiplicador
+        Si multiplicando Mod 2 <> 0 Entonces
+            resultado <- resultado + multiplicador
+        FinSi
+        // Dividir el multiplicando por 2 y multiplicar el multiplicador por 2
+        multiplicando <- multiplicando Div 2
+        multiplicador <- multiplicador * 2
+    Fin Mientras
+
+    // Mostrar el resultado de la multiplicación
+    Escribir "El resultado de la multiplicación es:", resultado
+FinAlgoritmo
