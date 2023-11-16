@@ -1,0 +1,35 @@
+Algoritmo ConvertirBaseNumerica
+    // Declaración de variables
+    Definir numero_decimal, base, numero_convertido, digito_restante como Entero
+    Definir resultado, base_simbolos como Cadena de Caracteres
+
+    // Inicialización de variables
+    base_simbolos <- "0123456789ABCDEF"
+    resultado <- ""
+
+    // Lectura del número decimal desde la entrada estándar
+    Escribir "Ingrese el número decimal a convertir:"
+    Leer numero_decimal
+
+    // Lectura de la base de conversión desde la entrada estándar
+    Escribir "Elija la base de conversión (2 para binario, 8 para octal, 16 para hexadecimal):"
+    Leer base
+
+    // Verificar que la base esté en el conjunto {2, 8, 16}
+    Si base no es uno de {2, 8, 16} Entonces
+        Mostrar "La base de conversión no es válida. Debe ser 2, 8 o 16."
+    Sino
+        // Proceso de conversión
+        Para cada digito_restante en range(8 * sizeof(numero_decimal)):  // Se asume una longitud máxima de 8 bits por byte del número
+            resultado <- base_simbolos[digito_restante % base] + resultado
+            digito_restante <- digito_restante // base
+
+            Si digito_restante == 0 Entonces
+                Romper // Terminar el bucle si ya no hay dígitos restantes
+            FinSi
+        FinPara
+
+        // Mostrar el resultado
+        Mostrar "El número ", numero_decimal, " en base ", base, " es: ", resultado
+    FinSi
+FinAlgoritmo

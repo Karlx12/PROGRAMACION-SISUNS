@@ -1,0 +1,50 @@
+Algoritmo MultiplicarMatrices
+    // Declaración de variables
+    Definir matriz_a, matriz_b, matriz_resultado como Entero[4][4]
+    Definir i, j, k, suma como Entero
+
+    // Lectura de la matriz A desde la entrada estándar
+    Escribir "Ingrese los elementos de la matriz A (4x4):"
+    Para i <- 0 Hasta 3 Con Paso 1
+        Para j <- 0 Hasta 3 Con Paso 1
+            Escribir "Ingrese el elemento A[", i, "][", j, "]:"
+            Leer matriz_a[i][j]
+        FinPara
+    FinPara
+
+    // Lectura de la matriz B desde la entrada estándar
+    Escribir "Ingrese los elementos de la matriz B (4x4):"
+    Para i <- 0 Hasta 3 Con Paso 1
+        Para j <- 0 Hasta 3 Con Paso 1
+            Escribir "Ingrese el elemento B[", i, "][", j, "]:"
+            Leer matriz_b[i][j]
+        FinPara
+    FinPara
+
+    // Inicialización de la matriz resultado
+    Para i <- 0 Hasta 3 Con Paso 1
+        Para j <- 0 Hasta 3 Con Paso 1
+            matriz_resultado[i][j] <- 0
+        FinPara
+    FinPara
+
+    // Multiplicación de matrices
+    Para i <- 0 Hasta 3 Con Paso 1
+        Para j <- 0 Hasta 3 Con Paso 1
+            Para k <- 0 Hasta 3 Con Paso 1
+                suma <- suma + matriz_a[i][k] * matriz_b[k][j]
+            FinPara
+            matriz_resultado[i][j] <- suma
+            suma <- 0
+        FinPara
+    FinPara
+
+    // Mostrar la matriz resultado
+    Escribir "Matriz Resultado (A * B):"
+    Para i <- 0 Hasta 3 Con Paso 1
+        Para j <- 0 Hasta 3 Con Paso 1
+            Escribir matriz_resultado[i][j], " "
+        FinPara
+        Escribir ""
+    FinPara
+FinAlgoritmo

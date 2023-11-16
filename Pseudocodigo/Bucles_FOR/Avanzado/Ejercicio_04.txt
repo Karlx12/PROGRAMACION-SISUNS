@@ -1,0 +1,38 @@
+Algoritmo SumarNumerosPrimos
+    // Declaración de variables
+    Definir numeros como Entero[5]
+    Definir numero, suma como Entero
+
+    // Inicialización de variables
+    suma <- 0
+
+    // Lectura de los 5 números desde la entrada estándar
+    Para i <- 0 Hasta 4 Con Paso 1
+        Escribir "Ingrese el número ", i+1, ":"
+        Leer numero
+        numeros[i] <- numero
+    FinPara
+
+    // Verificar si un número es primo y sumarlo
+    Para i <- 0 Hasta 4 Con Paso 1
+        Si EsPrimo(numeros[i]) Entonces
+            suma <- suma + numeros[i]
+        FinSi
+    FinPara
+
+    // Mostrar la suma de los números primos
+    Mostrar "La suma de los números primos es: ", suma
+FinAlgoritmo
+
+// Función para verificar si un número es primo
+Funcion EsPrimo(numero) Retorna Booleano
+    Si numero <= 1 Entonces
+        Retornar Falso
+    FinSi
+    Para i <- 2 Hasta RaizCuadradaDe(numero) Con Paso 1
+        Si numero MOD i = 0 Entonces
+            Retornar Falso
+        FinSi
+    FinPara
+    Retornar Verdadero
+FinFuncion

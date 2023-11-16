@@ -1,0 +1,31 @@
+Algoritmo ConvertirAMorse
+    // Declaración de variables
+    Definir palabra, palabra_morse como Cadena de Caracteres
+    Definir caracter, morse_caracter como Caracter
+    Definir diccionario_morse como Diccionario de Caracter a Cadena de Caracteres
+
+    // Inicialización del diccionario Morse
+    diccionario_morse <- {
+        'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
+        'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
+        'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+        'Y': '-.--', 'Z': '--..',
+        '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....',
+        '6': '-....', '7': '--...', '8': '---..', '9': '----.'
+    }
+
+    // Lectura de la palabra desde la entrada estándar
+    Escribir "Ingrese la palabra a convertir a código Morse:"
+    Leer palabra
+
+    // Convertir cada caracter de la palabra a código Morse
+    Para cada caracter en palabra
+        Si caracter es una letra o un número en el diccionario_morse Entonces
+            morse_caracter <- diccionario_morse[caracter]
+            palabra_morse <- palabra_morse + morse_caracter + ' '
+        FinSi
+    FinPara
+
+    // Mostrar el resultado
+    Mostrar "La palabra '", palabra, "' en código Morse es: ", palabra_morse
+FinAlgoritmo
