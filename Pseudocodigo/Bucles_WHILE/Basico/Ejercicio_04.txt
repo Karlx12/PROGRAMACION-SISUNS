@@ -1,0 +1,31 @@
+Algoritmo VerificarCapicua
+    // Declaración de variables
+    Definir numero, inverso, original, digito Como Entero
+
+    // Lectura del número de 4 cifras desde la entrada estándar
+    Escribir "Ingrese un número de 4 cifras:"
+    Leer numero
+
+    // Verificar que el número tenga 4 cifras
+    Si numero < 1000 o numero > 9999 Entonces
+        Escribir "El número ingresado no tiene 4 cifras. Fin del programa."
+    Sino
+        // Inicialización de variables
+        original <- numero
+        inverso <- 0
+
+        // Obtener el número inverso
+        Mientras numero > 0 Hacer
+            digito <- numero MOD 10
+            inverso <- inverso * 10 + digito
+            numero <- numero DIV 10
+        FinMientras
+
+        // Verificar si es capicúa y mostrar el resultado
+        Si original = inverso Entonces
+            Escribir "El número", original, "es capicúa."
+        Sino
+            Escribir "El número", original, "no es capicúa."
+        FinSi
+    FinSi
+FinAlgoritmo

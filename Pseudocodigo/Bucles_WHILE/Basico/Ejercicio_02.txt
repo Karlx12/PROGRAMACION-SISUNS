@@ -1,0 +1,21 @@
+Algoritmo MostrarSerie
+    // Declaración de variables
+    Definir numero como Entero
+
+    // Inicialización del número
+    numero <- 1
+
+    // Mientras el número sea menor o igual a 20
+    Mientras numero <= 20 Hacer
+        // Mostrar el número actual
+        Escribir numero
+
+        // Si el número es divisible por 5, mostrar 0
+        Si numero % 5 == 0 Entonces
+            Escribir 0
+        FinSi
+
+        // Incrementar el número
+        numero <- numero + 1
+    FinMientras
+FinAlgoritmo

@@ -1,0 +1,32 @@
+Algoritmo PiramideNumerica
+    // Declaración de variables
+    Definir nivel, numero, espacios como Entero
+
+    // Inicialización de variables
+    nivel <- 1
+
+    // Mientras el nivel sea menor o igual a 10
+    Mientras nivel <= 10 Hacer
+        // Calcular el número de espacios antes de los números
+        espacios <- 10 - nivel
+
+        // Imprimir los espacios
+        Para i <- 1 Hasta espacios Con Paso 1
+            Escribir " "
+        FinPara
+
+        // Imprimir los números ascendentes
+        Para numero <- 1 Hasta nivel Con Paso 1
+            Escribir numero
+        FinPara
+
+        // Imprimir los números descendentes
+        Para numero <- nivel-1 Hasta 1 Con Paso -1
+            Escribir numero
+        FinPara
+
+        // Ir al siguiente nivel
+        nivel <- nivel + 1
+        Escribir ""  // Nueva línea para la siguiente fila
+    FinMientras
+FinAlgoritmo
