@@ -1,0 +1,23 @@
+Algoritmo SumaCuadradosCubos
+    // Declaración de variables
+    Definir suma, numero Como Entero
+
+    // Inicialización de variables
+    suma <- 0
+    numero <- 1
+
+    // Calcular la suma de cuadrados de pares y cubos de impares con un bucle Mientras
+    Mientras numero <= 10 Hacer
+        Si numero Mod 2 = 0 Entonces
+            // Sumar el cuadrado de números pares
+            suma <- suma + numero^2
+        Sino
+            // Sumar el cubo de números impares
+            suma <- suma + numero^3
+        FinSi
+        numero <- numero + 1
+    Fin Mientras
+
+    // Mostrar el resultado
+    Escribir "La suma de cuadrados de pares y cubos de impares entre 1 y 10 es:", suma
+FinAlgoritmo

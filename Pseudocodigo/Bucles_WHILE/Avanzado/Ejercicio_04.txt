@@ -1,0 +1,33 @@
+Algoritmo Login
+    // Declaración de variables
+    Definir usuario, contraseña, intentos, usuarioIngresado, contraseñaIngresada Como Cadena
+
+    // Inicialización de variables
+    usuario <- "usuario123"
+    contraseña <- "contraseña456"
+    intentos <- 0
+
+    // Ciclo Mientras para intentos de inicio de sesión
+    Mientras intentos < 3 Hacer
+        // Solicitar al usuario ingresar credenciales
+        Escribir "Ingrese el nombre de usuario:"
+        Leer usuarioIngresado
+        Escribir "Ingrese la contraseña:"
+        Leer contraseñaIngresada
+
+        // Verificar credenciales
+        Si usuarioIngresado = usuario Y contraseñaIngresada = contraseña Entonces
+            Escribir "Inicio de sesión exitoso. Bienvenido, ", usuario
+            Salir // Salir del ciclo si las credenciales son correctas
+        Sino
+            Escribir "Credenciales incorrectas. Intento ", intentos + 1, " de 3"
+            intentos <- intentos + 1
+        FinSi
+    Fin Mientras
+
+    // Bloquear el programa después de 3 intentos fallidos
+    Si intentos = 3 Entonces
+        Escribir "Demasiados intentos fallidos. El programa se ha bloqueado."
+    FinSi
+
+FinAlgoritmo

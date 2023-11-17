@@ -1,0 +1,22 @@
+Algoritmo esPalindromo
+	//1. Las expresiones son cadenas debemos definirlas como tal
+	Definir  palabra, palabraReversa Como Cadena
+	Definir i Como Entero
+	Leer palabra
+  	//2. palabraReversa: Almacenará la expresión del usuario al reves
+	palabraReversa = ""
+  	//3. Indica cuantos caracteres tiene la cadena
+	tamCadena = Longitud(palabra)
+	Para i<-0 Hasta tamCadena Con Paso 1 Hacer
+    		//4. SubCadena: Toma la cadena "palabra" y nos da el caracter desde la posicion (tamCadena - i) hasta (tamCadena - i)
+    		//   tamCadena - i : indica que empezará desde el último caracter de la palabra e irá retrocediendo
+		palabraReversa = Concatenar(palabraReversa,SubCadena(palabra,tamCadena - i,tamCadena - i))
+	Fin Para
+  	//5. Si ambas expresiones son iguales entonces es un palíndromo
+	Si palabra = palabraReversa Entonces
+		Escribir "Es un palíndromo"
+	SiNo
+		Escribir "No es un palíndromo"
+	Fin Si
+	Escribir palabraReversa
+FinAlgoritmo

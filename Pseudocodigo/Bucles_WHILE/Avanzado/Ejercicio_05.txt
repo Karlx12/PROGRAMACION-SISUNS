@@ -1,0 +1,52 @@
+Algoritmo JuegoPiedraPapelTijeras
+    // Declaración de variables
+    Definir opciones, victorias, derrotas Como Entero
+    Definir eleccionUsuario, eleccionComputadora, indiceComputadora Como Cadena
+
+    // Inicialización de variables
+    opciones <- ["Piedra", "Papel", "Tijeras"]
+    victorias <- 0
+    derrotas <- 0
+
+    // Ciclo Mientras para jugar múltiples rondas
+    Mientras Verdadero Hacer
+        // Mostrar opciones al usuario
+        Escribir "Opciones: 1. Piedra, 2. Papel, 3. Tijeras, 0. Salir"
+        Escribir "Victorias: ", victorias, " Derrotas: ", derrotas
+
+        // Solicitar al usuario elegir una opción
+        Escribir "Elige una opción (1-3):"
+        Leer eleccionUsuario
+
+        // Salir del juego si el usuario elige la opción 0
+        Si eleccionUsuario = "0" Entonces
+            Escribir "Fin del juego. Gracias por jugar."
+            Salir
+        FinSi
+
+        // Generar elección para la computadora (alternando entre las opciones)
+        indiceComputadora <- (ConvertirEntero(eleccionUsuario) % 3) + 1
+        eleccionComputadora <- opciones[indiceComputadora - 1]
+
+        // Mostrar las elecciones del usuario y la computadora
+        Escribir "Tu elección: ", opciones[ConvertirEntero(eleccionUsuario) - 1]
+        Escribir "Elección de la computadora: ", eleccionComputadora
+
+        // Determinar el ganador de la ronda
+        Si eleccionUsuario = eleccionComputadora Entonces
+            Escribir "Empate en esta ronda."
+        Sino
+            Si (eleccionUsuario = "1" Y eleccionComputadora = "3") O
+               (eleccionUsuario = "2" Y eleccionComputadora = "1") O
+               (eleccionUsuario = "3" Y eleccionComputadora = "2") Entonces
+                Escribir "¡Ganaste esta ronda!"
+                victorias <- victorias + 1
+            Sino
+                Escribir "¡Perdiste esta ronda!"
+                derrotas <- derrotas + 1
+            FinSi
+        FinSi
+
+    Fin Mientras
+
+FinAlgoritmo

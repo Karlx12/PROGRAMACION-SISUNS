@@ -1,0 +1,17 @@
+Algoritmo DescuentoSupermercado
+    // Generar número aleatorio para el descuento
+    DescuentoAleatorio = GenerarNumeroAleatorio()
+
+    // Solicitar al usuario ingresar el total de la compra
+    Escribir "Ingrese el total de la compra: "
+    Leer totalCompra
+
+    // Calcular el descuento según la regla dada
+    Si DescuentoAleatorio < 74 Entonces
+        descuento = totalCompra * 0.15
+    Sino
+        descuento = totalCompra * 0.20
+    Fin Si
+
+    Escribir "El descuento es: ", descuento
+FinAlgoritmo

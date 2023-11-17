@@ -1,0 +1,16 @@
+Algoritmo RangoEdad
+    // Solicitar al usuario ingresar su edad
+    Escribir "Ingrese su edad: "
+    Leer edad
+
+    // Determinar en qué rango se encuentra
+    Si edad >= 0 y edad <= 12 Entonces
+        Escribir "Niño"
+    Sino Si edad >= 13 y edad <= 17 Entonces
+        Escribir "Adolescente"
+    Sino Si edad >= 18 y edad <= 64 Entonces
+        Escribir "Adulto"
+    Sino
+        Escribir "Adulto Mayor"
+    Fin Si
+FinAlgoritmo

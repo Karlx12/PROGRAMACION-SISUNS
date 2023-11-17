@@ -1,0 +1,30 @@
+Algoritmo DigitosImpares
+    // Leer un número de 4 dígitos
+    Leer numero
+
+    // Verificar si el número tiene 4 dígitos
+    Si numero >= 1000 y numero <= 9999 Entonces
+        // Inicializar contador de dígitos impares
+        contador_impares = 0
+
+        // Iterar sobre cada dígito del número
+        Mientras numero > 0 Hacer
+            // Obtener el último dígito
+            digito = numero % 10
+
+            // Verificar si el dígito es impar
+            Si digito % 2 != 0 Entonces
+                // Incrementar el contador de dígitos impares
+                contador_impares = contador_impares + 1
+            Fin Si
+
+            // Eliminar el último dígito
+            numero = numero // 10
+        Fin Mientras
+
+        // Mostrar la cantidad de dígitos impares
+        Escribir "La cantidad de dígitos impares es:", contador_impares
+    Sino
+        Escribir "El número no tiene 4 dígitos"
+    Fin Si
+FinAlgoritmo

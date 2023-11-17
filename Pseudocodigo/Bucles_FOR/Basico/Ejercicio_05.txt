@@ -1,0 +1,29 @@
+Algoritmo CalcularSumaPrimos
+    Definir N, suma, contador, numero como Entero
+    Escribir "Ingrese el valor de N:"
+    Leer N
+    suma <- 0
+    contador <- 0
+
+    Para numero <- 2 Hasta N * 20 Con Paso 1
+        es_primo <- Verdadero
+
+        Para i <- 2 Hasta RaizCuadradaDe(numero) Con Paso 1
+            Si numero MOD i = 0 Entonces
+                es_primo <- Falso
+                Salir // Salir del bucle interno si no es primo
+            FinSi
+        FinPara
+
+        Si es_primo Entonces
+            suma <- suma + numero
+            contador <- contador + 1
+        FinSi
+
+        Si contador = N Entonces
+            Salir // Salir del bucle principal si se han encontrado N números primos
+        FinSi
+    FinPara
+
+    Escribir "La suma de los primeros ", N, " números primos es: ", suma
+FinAlgoritmo

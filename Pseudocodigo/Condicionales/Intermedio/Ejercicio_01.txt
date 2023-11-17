@@ -1,0 +1,14 @@
+Algoritmo yearBisiesto
+	//1. Establecemos el año como un entero
+	Definir year Como Entero
+	Leer year
+  	//2. Los años bisiestos se dan cada 4 años por ello si el año tiene una división exacta entonces es bisiesto,
+  	//   caso contrario, no lo es
+	Si year mod 4 = 0 Entonces
+    		// 3. mod: Nos permite obtener el residuo de una division, en una division exacta el residuo es cero
+    		//    por ello lo igualamos a cero
+		Escribir  "Es un año bisiesto"
+	SiNo
+		Escribir  "No es un año bisiesto"
+	Fin Si
+FinAlgoritmo

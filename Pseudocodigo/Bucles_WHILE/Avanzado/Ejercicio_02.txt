@@ -1,0 +1,33 @@
+Algoritmo AdivinarNumero
+    // Declaración de variables
+    Definir numeroAleatorio, intento, numeroAdivinanza Como Entero
+
+    // Inicialización de variables
+    intento <- 0
+
+    // Asignar un número aleatorio al número a adivinar
+    numeroAleatorio <- 50 // Puedes elegir cualquier número en el rango de 1 a 100
+
+    // Ciclo para adivinar el número
+    Repetir
+        // Incrementar el contador de intentos
+        intento <- intento + 1
+
+        // Solicitar al usuario adivinar el número
+        Escribir "Intento ", intento, ": Ingrese un número entre 1 y 100:"
+        Leer numeroAdivinanza
+
+        // Verificar si el número es igual, mayor o menor
+        Si numeroAdivinanza = numeroAleatorio Entonces
+            Escribir "¡Felicitaciones! Has adivinado el número correctamente."
+        Sino
+            Si numeroAdivinanza < numeroAleatorio Entonces
+                Escribir "El número es mayor. Intenta nuevamente."
+            Sino
+                Escribir "El número es menor. Intenta nuevamente."
+            FinSi
+        FinSi
+
+    Hasta Que numeroAdivinanza = numeroAleatorio
+
+FinAlgoritmo

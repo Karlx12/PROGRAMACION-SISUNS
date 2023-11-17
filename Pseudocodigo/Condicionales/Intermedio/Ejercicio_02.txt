@@ -1,0 +1,31 @@
+Algoritmo NumeroARomano
+    // Definir listas para los símbolos romanos y sus equivalentes en valores
+    simbolos_romanos = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    valores = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+
+    // Solicitar al usuario ingresar un número entero
+    Escribir "Ingrese un número entero (1-3999): "
+    Leer numero
+
+    // Verificar si el número está en el rango válido
+    Si numero < 1 o numero > 3999 Entonces
+        Escribir "Número fuera de rango"
+        Detener
+    Fin Si
+
+    // Inicializar la cadena de resultado
+    resultado_romano = ""
+
+    // Iterar sobre los valores y construir el número romano
+    Para i Desde 0 Hasta Longitud(simbolos_romanos) - 1 Hacer
+        Mientras numero >= valores[i] Hacer
+            // Agregar el símbolo romano al resultado
+            resultado_romano = resultado_romano + simbolos_romanos[i]
+            // Restar el valor correspondiente al número
+            numero = numero - valores[i]
+        Fin Mientras
+    Fin Para
+
+    // Mostrar el número romano resultante
+    Escribir "El número romano es: ", resultado_romano
+FinAlgoritmo

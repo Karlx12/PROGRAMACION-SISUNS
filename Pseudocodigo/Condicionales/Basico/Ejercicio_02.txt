@@ -1,0 +1,12 @@
+Algoritmo Calificacion
+    // Solicitar al usuario ingresar una calificación (0-20)
+    Escribir "Ingrese su calificación (0-20): "
+    Leer calificacion
+
+    // Verificar si la calificación es aprobatoria (mayor o igual a 11)
+    Si calificacion >= 11 Entonces
+        Escribir "Calificación aprobatoria"
+    Sino
+        Escribir "Calificación no aprobatoria"
+    Fin Si
+FinAlgoritmo

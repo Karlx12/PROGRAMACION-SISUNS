@@ -1,0 +1,46 @@
+Algoritmo EstadisticasListaNumerosConFor
+    // Leer la lista de números
+    Leer lista_numeros
+
+    // Verificar si la lista no está vacía
+    Si Longitud(lista_numeros) > 0 Entonces
+        // Calcular la media
+        media = 0
+        Para cada numero en lista_numeros Hacer
+            media = media + numero
+        Fin Para
+        media = media / Longitud(lista_numeros)
+
+        // Ordenar la lista para calcular la mediana
+        lista_numeros_ordenada = OrdenarListaConFor(lista_numeros)
+
+        // Calcular la mediana
+        Si Longitud(lista_numeros_ordenada) mod 2 = 0 Entonces
+            mediana = (lista_numeros_ordenada[Longitud(lista_numeros_ordenada) // 2 - 1] + lista_numeros_ordenada[Longitud(lista_numeros_ordenada) // 2]) / 2
+        Sino
+            mediana = lista_numeros_ordenada[Longitud(lista_numeros_ordenada) // 2]
+        Fin Si
+
+        // Calcular la moda
+        frecuencias = CrearDiccionario()
+        Para cada numero en lista_numeros Hacer
+            frecuencias[numero] = frecuencias[numero] + 1
+        Fin Para
+
+        moda = None
+        max_frecuencia = 0
+        Para cada numero, frecuencia en frecuencias Hacer
+            Si frecuencia > max_frecuencia Entonces
+                moda = numero
+                max_frecuencia = frecuencia
+            Fin Si
+        Fin Para
+
+        // Mostrar los resultados
+        Escribir "Media:", media
+        Escribir "Mediana:", mediana
+        Escribir "Moda:", moda
+    Sino
+        Escribir "La lista está vacía"
+    Fin Si
+FinAlgoritmo
