@@ -1,24 +1,21 @@
-# Función para verificar si un número es primo
-def es_primo(numero):
-    if numero <= 1:
-        return False
-    for i in range(2, int(numero**0.5) + 1):
-        if numero % i == 0:
-            return False
-    return True
-
 # Inicialización de variables
 numeros = [0] * 5
 suma = 0
 
 # Lectura de los 5 números desde la entrada estándar
 for i in range(5):
-    numeros[i] = int(input(f"Ingrese el número {i+1}: "))
+    numeros[i] = int(input("Ingrese el número {}: ".format(i + 1)))
 
-# Sumar solo los números primos
+# Verificar si un número es primo y sumarlo
 for num in numeros:
-    if es_primo(num):
-        suma += num
+    if num > 1:
+        es_primo = True
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                es_primo = False
+                break
+        if es_primo:
+            suma += num
 
 # Mostrar la suma de los números primos
-print(f"La suma de los números primos es: {suma}")
+print("La suma de los números primos es:", suma)
