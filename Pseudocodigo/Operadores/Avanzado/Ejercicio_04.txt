@@ -1,17 +1,23 @@
 Algoritmo ResolverEcuacionCuadratica
     // Solicitar al usuario ingresar los coeficientes a, b y c
-    Leer a, b, c
-
+    Escribir " ECUACIONES CUADRATICAS: ax^2 + bx + c"
+	Escribir "Ingresar el valor de a: "
+	Leer a
+	Escribir "Ingresar el valor de b: "
+	Leer b
+	Escribir "Ingresar el valor de c: "
+	Leer c
+	
     // Calcular el discriminante
     discriminante = b^2 - 4 * a * c
-
+	
     Si discriminante >= 0 Entonces
         // Calcular las raíces reales
-        x1 = (-b + sqrt(discriminante)) / (2 * a)
-        x2 = (-b - sqrt(discriminante)) / (2 * a)
-
+        x1 = (-b + raiz(discriminante)) / (2 * a)
+        x2 = (-b - raiz(discriminante)) / (2 * a)
+		
         // Mostrar las raíces
-        Escribir "Las raíces reales son:", x1, "y", x2
+        Escribir "Las raíces reales son:", x1, " y ", x2
     Sino
         Escribir "La ecuación no tiene raíces reales"
     Fin Si
