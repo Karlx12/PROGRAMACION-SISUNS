@@ -1,6 +1,7 @@
 Algoritmo Operaciones_Básicas
 	// Ingresar dos números
-	Escribir "Ingresar el primer número" 
+	Escribir "OPERACIONES BÁSICAS (+, -, *, /)"
+	Escribir "Ingresar el primer número:" 
 	Leer num1
 	Escribir "Ingresar el segundo número" 
 	Leer num2
