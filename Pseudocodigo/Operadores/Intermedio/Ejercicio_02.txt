@@ -1,10 +1,10 @@
 Algoritmo ConvertirYardasAMillas
-    // Solicitar la cantidad de yardas al usuario
-    Leer yardas
-
-    // Realizar la conversión a millas
-    millas = yardas * 0.000568182
-
-    // Mostrar el resultado
-    Escribir "La cantidad en millas es:", millas
-Fin Algoritmo
+	// Solicitar la cantidad de yardas al usuario
+	Escribir "  CONVERTIDOR DE YARDAS A MILLAS"
+	Escribir "Digite la cantidad de yardas: " 
+	Leer yardas
+	// Realizar la conversión a millas
+	millas = yardas * 0.000568182
+	// Mostrar el resultado
+	Escribir "La cantidad en millas es:", millas
+	Fin Algoritmo
