@@ -1,12 +1,17 @@
 Algoritmo CalcularInteresSimple
     // Solicitar al usuario ingresar el capital, tasa de interés y tiempo en años
+	Escribir "CALCULADORA DE INTERES SIMPLE (ANUAL)"
+	Escribir "Ingrese su capital anual: "
     Leer capital
+	Escribir "Ingrese su tasa de interes anual: "
     Leer tasaInteres
+	Escribir "Ingrese el tiempo(Años): "
     Leer tiempo
-
+	
     // Calcular el interés simple
     interes = capital * tasaInteres * tiempo
-
+	
     // Mostrar el resultado
-    Escribir "El interés simple es:", interes
+    Escribir "El interés obtenidos son:", interes
 Fin Algoritmo
+
