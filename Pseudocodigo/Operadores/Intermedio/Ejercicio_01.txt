@@ -3,9 +3,9 @@ Algoritmo CalcularPromedio
 	Escribir "PROMEDIO DE TRES NOTAS"
 	Escribir "Ingresar Nota 1: "
     Leer nota1
-	Escribir "Ingresar Nota 1: "
+	Escribir "Ingresar Nota 2: "
     Leer nota2
-	Escribir "Ingresar Nota 1: "
+	Escribir "Ingresar Nota 3: "
     Leer nota3
     // Calcular el promedio
     promedio = (nota1 + nota2 + nota3) / 3
