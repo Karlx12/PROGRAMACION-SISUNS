@@ -1,15 +1,17 @@
 Algoritmo AreaTriangulo
     // Ingresar longitudes de los lados
+	Escribir "  CALCULANDO EL ÁREA DEL TRIANGULO"
+	Escribir "Ingrese el valor del primer lado:"
     Leer lado1
+	Escribir "Ingrese el valor del segundo lado:"
     Leer lado2
+	Escribir "Ingrese el valor del tercer lado:"
     Leer lado3
-
     // Calcular semiperímetro
     s = (lado1 + lado2 + lado3) / 2
-
     // Calcular área
-    area = raiz(s * (s - lado1) * (s - lado2) * (s - lado3))
-
-    // Mostrar resultado
+    area = redon(raiz(s * (s - lado1) * (s - lado2) * (s - lado3)))
+	
+	// Mostrar resultado
     Escribir "El área del triángulo es: ", area
 Fin Algoritmo
