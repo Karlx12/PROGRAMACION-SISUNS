@@ -1,12 +1,16 @@
 Algoritmo CalcularPromedio
     // Solicitar tres notas al usuario
+	Escribir "PROMEDIO DE TRES NOTAS"
+	Escribir "Ingresar Nota 1: "
     Leer nota1
+	Escribir "Ingresar Nota 1: "
     Leer nota2
+	Escribir "Ingresar Nota 1: "
     Leer nota3
-
     // Calcular el promedio
     promedio = (nota1 + nota2 + nota3) / 3
-
+	// La funcion "redon" Redondear el resultado a número entero. 
+	promedio <- redon(promedio)
     // Mostrar el resultado
     Escribir "El promedio de las notas es:", promedio
 Fin Algoritmo
