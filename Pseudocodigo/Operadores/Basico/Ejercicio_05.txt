@@ -1,13 +1,13 @@
 Algoritmo AreaVolumenTetraedro
     // Ingresar longitud de la arista
+	Escribir "  AREA Y VOLUMEN DE UN TETRAEDRO"
+	Escribir "Ingresar el valor de la arista: "
     Leer arista
-
     // Calcular área
-    area = sqrt(3) * arista ^ 2
-
+    area = raiz(3) * arista ^ 2
     // Calcular volumen
-    volumen = (sqrt(2) / 12) * arista ^ 3
-
+    volumen = (raiz(2) / 12) * arista ^ 3
+	
     // Mostrar resultados
     Escribir "El área del tetraedro es: ", area
     Escribir "El volumen del tetraedro es: ", volumen
