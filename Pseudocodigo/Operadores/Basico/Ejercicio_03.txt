@@ -1,11 +1,12 @@
-Algoritmo ResiduoDivision
-    // Ingresar dos números
+Algoritmo Residuo_División 
+	// Ingresar dos números
+	Escribir "  RESIDUO DE LA DIVISIÓN DE DOS NÚMEROS"
+	Escribir "Ingrese el primer número (dividendo):"
     Leer dividendo
+	Escribir "Ingrese el segundo número (divisor):"
     Leer divisor
-
     // Calcular residuo
     residuo = dividendo % divisor
-
     // Mostrar resultado
     Escribir "El residuo de la división es: ", residuo
 Fin Algoritmo
