@@ -1,17 +1,20 @@
-Algoritmo OperacionesBasicas
-    // Ingresar dos números
-    Leer num1
-    Leer num2
+Algoritmo Operaciones_Básicas
+	// Ingresar dos números
+	Escribir "Ingresar el primer número" 
+	Leer num1
+	Escribir "Ingresar el segundo número" 
+	Leer num2
+	
+	// Realizar operaciones
+	suma = num1 + num2
+	resta = num1 - num2
+	multiplicacion = num1 * num2
+	division = num1 / num2
 
-    // Realizar operaciones
-    suma = num1 + num2
-    resta = num1 - num2
-    multiplicacion = num1 * num2
-    division = num1 / num2
-
-    // Mostrar resultados
-    Escribir "Suma: ", suma
-    Escribir "Resta: ", resta
-    Escribir "Multiplicación: ", multiplicacion
-    Escribir "División: ", division
-Fin Algoritmo
+	// Mostrar resultados
+	Escribir "Resultados:"
+	Escribir "Suma: ", suma
+	Escribir "Resta: ", resta
+	Escribir "Multiplicación: ", multiplicacion
+	Escribir "División: ", division
+FinAlgoritmo
